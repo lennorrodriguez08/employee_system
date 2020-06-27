@@ -1,0 +1,425 @@
+@import "default";
+@import "utilities";
+
+// OTHER UTILITIES
+.user_name_display {
+    color: #666;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+// LOGIN FORM & REGISTER
+.body {
+    background: #F7F7F7;
+}
+
+.login {
+    background: #F7F7F7;
+
+    &-1 {
+        max-width: 400px;
+        margin: auto;
+        padding: 80px 20px 20px;
+
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            max-width: 250px;
+            display: block;
+            margin: 5px auto 15px; 
+        }
+
+        input, select {
+            width: 100%;
+            display: block;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #bbb;
+            margin: 8px 0;
+            font-size: 15px;
+
+            &::placeholder {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            background: #347AB6;
+            color: #fff;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+
+        .create {
+            text-align: center;
+            display: block;
+            color: #347AB6;
+        }
+
+        select {
+            color: #666;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// ADMIN DASHBOARD
+#nav, .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #f2f2f2;
+
+    .nav-items {
+        display: flex;
+
+        .item {
+            max-width: 70px;
+            text-align: center;
+            margin-right: 60px;
+            
+            &:hover {
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// SUB NAV
+#sub-nav {
+
+    padding: 145px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item-1, .item-2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .item-2 {
+
+        a {
+            color: #666;
+        }
+
+        img {
+            max-width: 30px;
+            display: block;
+            margin-right: 5px;
+        }
+    }
+
+    .item {
+        margin-right: 30px;
+    }
+
+    select, input {
+        height: 25px;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0 5px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input[type="submit"] {
+        background: #DFF0FE;
+        font-size: 14px;
+        color: #555;
+        padding: 0 10px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    select {
+        padding-right: 30px;
+        color: #666;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// TABLE
+#table, #archive-info-container {
+    padding: 3px 20px;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #e5e5e5;
+
+        th,td {
+            height: 28px;
+            padding: 0 5px;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        th {
+            background: #4286F5;
+            border: none;
+            color: #fff;
+            height: 32px;
+        }
+
+        button {
+            display: block;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .view-more, .view-more-target {
+            background: #EFAD4D;
+        }
+
+        .update, .update_target {
+            background: #5BB85D;
+        }
+
+        .delete {
+            background: #D9544F;
+        }
+
+        .delete_target {
+            background: #D9544F;
+        }
+
+        .archive {
+            background: #4788C7;
+        }
+
+        .archive_target {
+            background: #4788C7;
+        }
+
+        .action {
+            
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+// ADD FORM, UPDATE FORM, ADD DEPARTMENT FORM
+#add-form, #update-form, #add-form-department, #view-form, #archive-info-form, #archive1-form, #current-employee-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    background: rgba(0,0,0,0.2);
+    display: none;
+
+    .form-container {
+        max-width: 350px;
+        background: #ffff;
+        margin: auto;
+        padding: 20px 20px 10px;
+        margin: 10px auto 10px;
+        border-radius: 3px;
+        box-shadow: #666 1px 1px 10px 1px;
+
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #347AB6;
+
+            i {
+                font-size: 30px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .form-div {
+
+            .form-input {
+                margin-bottom: 5px;
+
+                label {
+                    display: block;
+                    padding-bottom: 3px;
+                }
+    
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    border-radius: 3px;
+                    border: 1px solid #bbb;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                input[type="submit"] {
+                    background: #347AB6;
+                    border: 1px solid #347AB6;
+                    color: #fff;
+                    font-size: 15px;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.8;
+                    }
+                }
+
+                input[type="date"] {
+                    text-transform: uppercase;
+                }
+
+                .note {
+                    padding-top: 3px;
+                    color: #D9544F;
+                    font-size: 14px;
+                }
+
+                select {
+                    border: 1px solid #bbb;
+                    border-radius: 3px;
+                    font-size: 15px;
+                    font-family: 'Roboto', sans-serif;
+                    padding: 4px;
+                    width: 100%;
+                    color: #555;
+                    font-size: 14px;
+                    margin: 3px 0;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// OVERRIDE PADDING DEPARTMENT FORM
+#add-form-department {
+    padding-top: 100px;
+}
+
+// VIEW MORE FORM 
+#view-form {
+
+    .form-container {
+        max-width: 100%;
+        min-height: calc(100vh - 20px);
+        margin: 10px;
+
+    }
+}
+
+// EMPLOYEE DASHBOARD
+#current-employee-form {
+    position: relative!important;
+    display: block;
+    top: 0;
+    overflow: hidden;
+
+    .form-container {
+        max-width: 100%;
+        min-height: calc(100vh - 20px);
+        margin: 0;
+    }
+}
+
+// EMPLOYEE DASHBOARD NAVIGATION
+.navigation {
+    position: relative!important;
+    padding: 20px!important;
+    justify-content: space-between!important;
+    align-items: center;
+    z-index: 99;
+
+    .welcome {
+        align-self: flex-start;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            width: 35px;
+        }
+    }
+}
+
+// OVERRIDE ARCHIVE INFO FORM
+#archive-info-form {
+    // display: block;
+
+    .form-container {
+        max-width: 100%;
+        min-height: calc(100vh - 20px);
+        margin: 10px;
+
+    }
+}
+
+// OVERRIDE ARCHIVE1 INFO FORM
+#archive1-form {
+    // display: block;
+    z-index: 99;
+
+    .form-container {
+        max-width: 100%;
+        min-height: calc(100vh - 20px);
+        margin: 10px;
+
+    }
+}

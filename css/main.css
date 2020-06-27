@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.user_name_display {
+  color: #666;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.body {
+  background: #F7F7F7;
+}
+
+.login {
+  background: #F7F7F7;
+}
+
+.login-1 {
+  max-width: 400px;
+  margin: auto;
+  padding: 80px 20px 20px;
+}
+
+.login-1 h2 {
+  text-align: center;
+}
+
+.login-1 img {
+  max-width: 250px;
+  display: block;
+  margin: 5px auto 15px;
+}
+
+.login-1 input, .login-1 select {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.login-1 input::-webkit-input-placeholder, .login-1 select::-webkit-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-1 input:-ms-input-placeholder, .login-1 select:-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-1 input::-ms-input-placeholder, .login-1 select::-ms-input-placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-1 input::placeholder, .login-1 select::placeholder {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-1 input:focus, .login-1 select:focus {
+  outline: none;
+}
+
+.login-1 input[type="submit"] {
+  background: #347AB6;
+  color: #fff;
+  border: none;
+}
+
+.login-1 input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.login-1 .create {
+  text-align: center;
+  display: block;
+  color: #347AB6;
+}
+
+.login-1 select {
+  color: #666;
+}
+
+.login-1 select:hover {
+  cursor: pointer;
+}
+
+#nav, .navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f2f2f2;
+}
+
+#nav .nav-items, .navigation .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#nav .nav-items .item, .navigation .nav-items .item {
+  max-width: 70px;
+  text-align: center;
+  margin-right: 60px;
+}
+
+#nav .nav-items .item:hover, .navigation .nav-items .item:hover {
+  cursor: pointer;
+}
+
+#nav .nav-items .item img, .navigation .nav-items .item img {
+  width: 100%;
+}
+
+#sub-nav {
+  padding: 145px 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sub-nav .item-1, #sub-nav .item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sub-nav .item-2 a {
+  color: #666;
+}
+
+#sub-nav .item-2 img {
+  max-width: 30px;
+  display: block;
+  margin-right: 5px;
+}
+
+#sub-nav .item {
+  margin-right: 30px;
+}
+
+#sub-nav select, #sub-nav input {
+  height: 25px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 5px;
+}
+
+#sub-nav select:focus, #sub-nav input:focus {
+  outline: none;
+}
+
+#sub-nav input[type="submit"] {
+  background: #DFF0FE;
+  font-size: 14px;
+  color: #555;
+  padding: 0 10px;
+}
+
+#sub-nav input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+#sub-nav select {
+  padding-right: 30px;
+  color: #666;
+}
+
+#sub-nav select:hover {
+  cursor: pointer;
+}
+
+#table, #archive-info-container {
+  padding: 3px 20px;
+}
+
+#table table, #archive-info-container table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #e5e5e5;
+}
+
+#table table th, #table table td, #archive-info-container table th, #archive-info-container table td {
+  height: 28px;
+  padding: 0 5px;
+  font-weight: normal;
+  text-align: left;
+}
+
+#table table th, #archive-info-container table th {
+  background: #4286F5;
+  border: none;
+  color: #fff;
+  height: 32px;
+}
+
+#table table button, #archive-info-container table button {
+  display: block;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#table table button:hover, #archive-info-container table button:hover {
+  cursor: pointer;
+}
+
+#table table button:focus, #archive-info-container table button:focus {
+  outline: none;
+}
+
+#table table .view-more, #table table .view-more-target, #archive-info-container table .view-more, #archive-info-container table .view-more-target {
+  background: #EFAD4D;
+}
+
+#table table .update, #table table .update_target, #archive-info-container table .update, #archive-info-container table .update_target {
+  background: #5BB85D;
+}
+
+#table table .delete, #archive-info-container table .delete {
+  background: #D9544F;
+}
+
+#table table .delete_target, #archive-info-container table .delete_target {
+  background: #D9544F;
+}
+
+#table table .archive, #archive-info-container table .archive {
+  background: #4788C7;
+}
+
+#table table .archive_target, #archive-info-container table .archive_target {
+  background: #4788C7;
+}
+
+#table table .action:hover, #archive-info-container table .action:hover {
+  opacity: 0.9;
+}
+
+#add-form, #update-form, #add-form-department, #view-form, #archive-info-form, #archive1-form, #current-employee-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+#add-form .form-container, #update-form .form-container, #add-form-department .form-container, #view-form .form-container, #archive-info-form .form-container, #archive1-form .form-container, #current-employee-form .form-container {
+  max-width: 350px;
+  background: #ffff;
+  margin: auto;
+  padding: 20px 20px 10px;
+  margin: 10px auto 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: #666 1px 1px 10px 1px;
+          box-shadow: #666 1px 1px 10px 1px;
+}
+
+#add-form .form-container .title, #update-form .form-container .title, #add-form-department .form-container .title, #view-form .form-container .title, #archive-info-form .form-container .title, #archive1-form .form-container .title, #current-employee-form .form-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #347AB6;
+}
+
+#add-form .form-container .title i, #update-form .form-container .title i, #add-form-department .form-container .title i, #view-form .form-container .title i, #archive-info-form .form-container .title i, #archive1-form .form-container .title i, #current-employee-form .form-container .title i {
+  font-size: 30px;
+}
+
+#add-form .form-container .title i:hover, #update-form .form-container .title i:hover, #add-form-department .form-container .title i:hover, #view-form .form-container .title i:hover, #archive-info-form .form-container .title i:hover, #archive1-form .form-container .title i:hover, #current-employee-form .form-container .title i:hover {
+  cursor: pointer;
+}
+
+#add-form .form-container .form-div .form-input, #update-form .form-container .form-div .form-input, #add-form-department .form-container .form-div .form-input, #view-form .form-container .form-div .form-input, #archive-info-form .form-container .form-div .form-input, #archive1-form .form-container .form-div .form-input, #current-employee-form .form-container .form-div .form-input {
+  margin-bottom: 5px;
+}
+
+#add-form .form-container .form-div .form-input label, #update-form .form-container .form-div .form-input label, #add-form-department .form-container .form-div .form-input label, #view-form .form-container .form-div .form-input label, #archive-info-form .form-container .form-div .form-input label, #archive1-form .form-container .form-div .form-input label, #current-employee-form .form-container .form-div .form-input label {
+  display: block;
+  padding-bottom: 3px;
+}
+
+#add-form .form-container .form-div .form-input input, #update-form .form-container .form-div .form-input input, #add-form-department .form-container .form-div .form-input input, #view-form .form-container .form-div .form-input input, #archive-info-form .form-container .form-div .form-input input, #archive1-form .form-container .form-div .form-input input, #current-employee-form .form-container .form-div .form-input input {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+}
+
+#add-form .form-container .form-div .form-input input:focus, #update-form .form-container .form-div .form-input input:focus, #add-form-department .form-container .form-div .form-input input:focus, #view-form .form-container .form-div .form-input input:focus, #archive-info-form .form-container .form-div .form-input input:focus, #archive1-form .form-container .form-div .form-input input:focus, #current-employee-form .form-container .form-div .form-input input:focus {
+  outline: none;
+}
+
+#add-form .form-container .form-div .form-input input[type="submit"], #update-form .form-container .form-div .form-input input[type="submit"], #add-form-department .form-container .form-div .form-input input[type="submit"], #view-form .form-container .form-div .form-input input[type="submit"], #archive-info-form .form-container .form-div .form-input input[type="submit"], #archive1-form .form-container .form-div .form-input input[type="submit"], #current-employee-form .form-container .form-div .form-input input[type="submit"] {
+  background: #347AB6;
+  border: 1px solid #347AB6;
+  color: #fff;
+  font-size: 15px;
+}
+
+#add-form .form-container .form-div .form-input input[type="submit"]:hover, #update-form .form-container .form-div .form-input input[type="submit"]:hover, #add-form-department .form-container .form-div .form-input input[type="submit"]:hover, #view-form .form-container .form-div .form-input input[type="submit"]:hover, #archive-info-form .form-container .form-div .form-input input[type="submit"]:hover, #archive1-form .form-container .form-div .form-input input[type="submit"]:hover, #current-employee-form .form-container .form-div .form-input input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#add-form .form-container .form-div .form-input input[type="date"], #update-form .form-container .form-div .form-input input[type="date"], #add-form-department .form-container .form-div .form-input input[type="date"], #view-form .form-container .form-div .form-input input[type="date"], #archive-info-form .form-container .form-div .form-input input[type="date"], #archive1-form .form-container .form-div .form-input input[type="date"], #current-employee-form .form-container .form-div .form-input input[type="date"] {
+  text-transform: uppercase;
+}
+
+#add-form .form-container .form-div .form-input .note, #update-form .form-container .form-div .form-input .note, #add-form-department .form-container .form-div .form-input .note, #view-form .form-container .form-div .form-input .note, #archive-info-form .form-container .form-div .form-input .note, #archive1-form .form-container .form-div .form-input .note, #current-employee-form .form-container .form-div .form-input .note {
+  padding-top: 3px;
+  color: #D9544F;
+  font-size: 14px;
+}
+
+#add-form .form-container .form-div .form-input select, #update-form .form-container .form-div .form-input select, #add-form-department .form-container .form-div .form-input select, #view-form .form-container .form-div .form-input select, #archive-info-form .form-container .form-div .form-input select, #archive1-form .form-container .form-div .form-input select, #current-employee-form .form-container .form-div .form-input select {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px;
+  width: 100%;
+  color: #555;
+  font-size: 14px;
+  margin: 3px 0;
+}
+
+#add-form .form-container .form-div .form-input select:focus, #update-form .form-container .form-div .form-input select:focus, #add-form-department .form-container .form-div .form-input select:focus, #view-form .form-container .form-div .form-input select:focus, #archive-info-form .form-container .form-div .form-input select:focus, #archive1-form .form-container .form-div .form-input select:focus, #current-employee-form .form-container .form-div .form-input select:focus {
+  outline: none;
+}
+
+#add-form-department {
+  padding-top: 100px;
+}
+
+#view-form .form-container {
+  max-width: 100%;
+  min-height: calc(100vh - 20px);
+  margin: 10px;
+}
+
+#current-employee-form {
+  position: relative !important;
+  display: block;
+  top: 0;
+  overflow: hidden;
+}
+
+#current-employee-form .form-container {
+  max-width: 100%;
+  min-height: calc(100vh - 20px);
+  margin: 0;
+}
+
+.navigation {
+  position: relative !important;
+  padding: 20px !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+}
+
+.navigation .welcome {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.navigation .welcome div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .welcome img {
+  width: 35px;
+}
+
+#archive-info-form .form-container {
+  max-width: 100%;
+  min-height: calc(100vh - 20px);
+  margin: 10px;
+}
+
+#archive1-form {
+  z-index: 99;
+}
+
+#archive1-form .form-container {
+  max-width: 100%;
+  min-height: calc(100vh - 20px);
+  margin: 10px;
+}
+/*# sourceMappingURL=main.css.map */
